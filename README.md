@@ -20,7 +20,7 @@ wait-for.sh [-h host] [-p port] [-e endpoint] [--secure] [-s] [-t timeout] [-- c
 
 ## Examples
 
-For example, let's test to see if we can access port 80 on www.google.com, and if it is available, echo the message `google is up`.
+For example, let's test to see if we can access localhost:8080/health/check, and if it is available, echo the message `Up and running!`.
 
 ```
 $ ./wait-for.sh -h localhost -p 8080 -e health/check --secure -s -t 15 -- echo "Up and running!"
